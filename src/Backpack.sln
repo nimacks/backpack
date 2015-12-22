@@ -3,8 +3,38 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sites", "Sites", "{BB6402E3-629F-495A-995B-9DE94C5FF199}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{88F403C5-E3BB-45C0-ACB6-5F1428CD37A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{B882DECC-D257-4670-8AC5-3E4B054A29BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A8556E15-AE91-4E80-8BAD-2841ECA95694}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backpack.Site", "Backpack.Site\Backpack.Site.csproj", "{50D6BF56-D318-4D09-99C2-1CA9E7BB256E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backpack.Site.Tests", "Backpack.Site.Tests\Backpack.Site.Tests.csproj", "{94CF7650-C0D7-4C64-BFDF-8B2837EDD55E}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50D6BF56-D318-4D09-99C2-1CA9E7BB256E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D6BF56-D318-4D09-99C2-1CA9E7BB256E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D6BF56-D318-4D09-99C2-1CA9E7BB256E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D6BF56-D318-4D09-99C2-1CA9E7BB256E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94CF7650-C0D7-4C64-BFDF-8B2837EDD55E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94CF7650-C0D7-4C64-BFDF-8B2837EDD55E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94CF7650-C0D7-4C64-BFDF-8B2837EDD55E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94CF7650-C0D7-4C64-BFDF-8B2837EDD55E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{50D6BF56-D318-4D09-99C2-1CA9E7BB256E} = {BB6402E3-629F-495A-995B-9DE94C5FF199}
+		{94CF7650-C0D7-4C64-BFDF-8B2837EDD55E} = {BB6402E3-629F-495A-995B-9DE94C5FF199}
 	EndGlobalSection
 EndGlobal
