@@ -1,7 +1,32 @@
 ﻿
+@model IEnumerable<Backpack.Site.Models.ProductViewModel>
+
 @{
     ViewBag.Title = "Shop Northwind";
 }
 
 <h2>Shop</h2>
 
+<table class="table table-striped table-hover ">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Available</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>@product.ProductName</td>
+            <td>@product.Price</td>
+            <td>@product.Available</td>
+            <td><button>Buy</button></td>
+        </tr>
+    }
+    
+
+    </tbody>
+</table> 

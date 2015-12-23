@@ -3,15 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Backpack.Site.Core.Products;
+using Backpack.Site.Models.Mapper;
 
 namespace Backpack.Site.Areas.Northwind.Controllers
 {
     public class ShopController : Controller
     {
+        private readonly IProductCatalogService _catalogRepository;
+        public ShopController(IProductCatalogService catalogRepository)
+        {
+            _catalogRepository = catalogRepository;
+        }
+
         // GET: Northwind/Shop
         public ActionResult Index()
         {
-            return View();
+            var products = _catalogRepository.GetProducts().ToProductViewModel();
+            return View(products);
         }
 
         // GET: Northwind/Shop/Details/5

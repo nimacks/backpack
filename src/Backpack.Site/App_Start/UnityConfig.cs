@@ -1,4 +1,5 @@
 using System;
+using Backpack.Site.Core.Products;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
 
@@ -36,7 +37,7 @@ namespace Backpack.Site.App_Start
             // container.LoadConfiguration();
 
             // TODO: Register your types here
-            // container.RegisterType<IProductRepository, ProductRepository>();
+             container.RegisterType<IProductCatalogService, ProductCatalogRepository>();
         }
     }
 }

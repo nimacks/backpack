@@ -215,122 +215,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Domain\Alphabetical_list_of_product.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Category.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Category_Sales_for_1997.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Current_Product_List.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Customer.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\CustomerDemographic.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Customer_and_Suppliers_by_City.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\CustOrderHist_Result.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\CustOrdersDetail_Result.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\CustOrdersOrders_Result.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Employee.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Employee_Sales_by_Country_Result.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Invoice.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\NorthwindModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NorthwindModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\NorthwindModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\NorthwindModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NorthwindModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Order.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Orders_Qry.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Order_Detail.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Order_Details_Extended.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Order_Subtotal.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Product.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Products_Above_Average_Price.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Products_by_Category.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Product_Sales_for_1997.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Region.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\SalesByCategory_Result.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Sales_by_Category.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Sales_by_Year_Result.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Sales_Totals_by_Amount.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Shipper.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Summary_of_Sales_by_Quarter.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Summary_of_Sales_by_Year.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Supplier.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Ten_Most_Expensive_Products_Result.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Domain\Territory.cs">
-      <DependentUpon>NorthwindModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Mapper\ProductMapper.cs" />
+    <Compile Include="Models\ProductViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -341,26 +229,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\Domain\NorthwindModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NorthwindModel.edmx</DependentUpon>
-      <LastGenOutput>NorthwindModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\Domain\NorthwindModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NorthwindModel.edmx</DependentUpon>
-      <LastGenOutput>NorthwindModel.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\Northwind\Views\web.config" />
-    <EntityDeploy Include="Models\Domain\NorthwindModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>NorthwindModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\Domain\NorthwindModel.edmx.diagram">
-      <DependentUpon>NorthwindModel.edmx</DependentUpon>
-    </Content>
     <Content Include="Areas\Northwind\Views\Shared\_NorthwindLayout.cshtml" />
     <Content Include="Areas\Northwind\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Northwind\Views\Shop\Index.cshtml" />
@@ -411,6 +282,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="ConnectionString.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -418,6 +290,7 @@
     <Folder Include="Areas\NorthwindAdmin\Models\" />
     <Folder Include="Areas\NorthwindAdmin\Views\Shared\" />
     <Folder Include="Areas\Northwind\Models\" />
+    <Folder Include="_private\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -429,6 +302,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Backpack.Site.Core\Backpack.Site.Core.csproj">
+      <Project>{c8e124a7-8ca2-4545-8f50-4ca5bbc521ab}</Project>
+      <Name>Backpack.Site.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
