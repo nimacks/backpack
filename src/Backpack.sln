@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backpack.Site.Tests", "Back
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backpack.Core", "Backpack.Core\Backpack.Core.csproj", "{58F6E130-2AC1-432A-8FE9-E16EB5D29F08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backpack.Site.Core", "Backpack.Site.Core\Backpack.Site.Core.csproj", "{C8E124A7-8CA2-4545-8F50-4CA5BBC521AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{58F6E130-2AC1-432A-8FE9-E16EB5D29F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58F6E130-2AC1-432A-8FE9-E16EB5D29F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58F6E130-2AC1-432A-8FE9-E16EB5D29F08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8E124A7-8CA2-4545-8F50-4CA5BBC521AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8E124A7-8CA2-4545-8F50-4CA5BBC521AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8E124A7-8CA2-4545-8F50-4CA5BBC521AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8E124A7-8CA2-4545-8F50-4CA5BBC521AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,5 +49,6 @@ Global
 		{50D6BF56-D318-4D09-99C2-1CA9E7BB256E} = {BB6402E3-629F-495A-995B-9DE94C5FF199}
 		{94CF7650-C0D7-4C64-BFDF-8B2837EDD55E} = {A8556E15-AE91-4E80-8BAD-2841ECA95694}
 		{58F6E130-2AC1-432A-8FE9-E16EB5D29F08} = {B882DECC-D257-4670-8AC5-3E4B054A29BC}
+		{C8E124A7-8CA2-4545-8F50-4CA5BBC521AB} = {BB6402E3-629F-495A-995B-9DE94C5FF199}
 	EndGlobalSection
 EndGlobal
