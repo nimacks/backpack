@@ -25,6 +25,13 @@ namespace Backpack.Site.Areas.Northwind.Controllers
             return View(model);
         }
 
+
+        public ActionResult Category(int id)
+        {
+            //var model = _catalogRepository.GetProductsByCategory(id);
+            throw new NotImplementedException();
+        }
+
         // GET: Northwind/Shop/Details/5
         public ActionResult Details(int id)
         {
