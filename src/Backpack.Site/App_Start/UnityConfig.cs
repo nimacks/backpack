@@ -1,7 +1,7 @@
 using System;
-using Backpack.Site.Core.Products;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
+using Backpack.Site.Core.Products;
 
 namespace Backpack.Site.App_Start
 {
