@@ -19,8 +19,10 @@ namespace Backpack.Site.Areas.Northwind.Controllers
         // GET: Northwind/Shop
         public ActionResult Index()
         {
-            var products = _catalogRepository.GetProducts().ToProductViewModel();
-            return View(products);
+            var model = _catalogRepository.GetProducts().ToProductViewModel();
+            model.Categories = _catalogRepository.GetCategories().ToCategoriesViewModel();
+
+            return View(model);
         }
 
         // GET: Northwind/Shop/Details/5

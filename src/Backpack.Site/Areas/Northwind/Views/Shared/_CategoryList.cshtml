@@ -1,1 +1,17 @@
 ﻿
+@model IEnumerable<Backpack.Site.Models.CategoryModel>
+
+
+<div>
+    <section>
+        <ul class="list-group">
+            @foreach (var category in Model)
+            {
+                <li class="list-group-item">
+                    @Html.ActionLink(category.Name, "index", "shop")
+                </li>
+            }
+            
+        </ul>
+    </section>
+</div>

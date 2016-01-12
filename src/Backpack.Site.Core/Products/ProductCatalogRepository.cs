@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Backpack.Site.Core.Entities;
 
@@ -10,6 +11,11 @@ namespace Backpack.Site.Core.Products
         public ProductCatalogRepository()
         {
             _northwindEntities = new NorthwindEntities();
+        }
+
+        public IEnumerable<Category> GetCategories()
+        {
+           return _northwindEntities.Categories.ToList();
         }
 
         public IEnumerable<Product> GetProducts()

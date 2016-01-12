@@ -6,5 +6,6 @@ namespace Backpack.Site.Core.Products
     public interface IProductCatalogService
     {
         IEnumerable<Product> GetProducts();
+        IEnumerable<Category> GetCategories();
     }
 }
