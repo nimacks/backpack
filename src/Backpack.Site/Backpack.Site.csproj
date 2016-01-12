@@ -209,6 +209,7 @@
     <Compile Include="Areas\Northwind\Controllers\ShopController.cs" />
     <Compile Include="Areas\Northwind\NorthwindAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FontAwesomeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -283,6 +284,8 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="ConnectionString.config" />
+    <Content Include="Views\FontAwesome\Index.cshtml" />
+
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
