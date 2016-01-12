@@ -285,7 +285,6 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="ConnectionString.config" />
     <Content Include="Views\FontAwesome\Index.cshtml" />
-
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -293,7 +292,6 @@
     <Folder Include="Areas\NorthwindAdmin\Models\" />
     <Folder Include="Areas\NorthwindAdmin\Views\Shared\" />
     <Folder Include="Areas\Northwind\Models\" />
-    <Folder Include="_private\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
