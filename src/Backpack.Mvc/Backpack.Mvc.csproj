@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers\CheckboxHelper.cs" />
+    <Compile Include="Helpers\HtmlExtensions.cs" />
     <Compile Include="Helpers\RadioButtonHelper.cs" />
     <Compile Include="Helpers\SubmitButtonHelper.cs" />
     <Compile Include="Helpers\TextBoxHelper.cs" />
