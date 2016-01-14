@@ -1,35 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using Backpack.Site.Core.Products;
-using Backpack.Site.Models.Mapper;
+using Backpack.Site.Models;
+
 
 namespace Backpack.Site.Areas.Northwind.Controllers
 {
+    /// <summary>
+    /// Shop Controller
+    /// </summary>
     public class ShopController : Controller
     {
+        #region Construction
         private readonly IProductCatalogService _productCatalog;
         public ShopController(IProductCatalogService productCatalog)
         {
             _productCatalog = productCatalog;
         }
+        #endregion
 
-        // GET: Northwind/Shop
+
+        [Route("northwind/shop")]
         public ActionResult Index()
         {
-            var model = _productCatalog.GetProducts().ToProductViewModel();
-            model.Categories = _productCatalog.GetCategories().ToCategoriesViewModel();
-
+            ProductViewModel model = new ProductViewModel();
+            model.Build(_productCatalog.GetProducts(), _productCatalog.GetCategories());
             return View(model);
         }
 
-
+        [Route("northwind/shop/category/{id}")]
         public ActionResult Category(int id)
         {
-            var model = _productCatalog.GetProductsByCategory(id).ToProductViewModel();
-            model.Categories = _productCatalog.GetCategories().ToCategoriesViewModel();
+            ProductViewModel model = new ProductViewModel();
+            model.Build(_productCatalog.GetProductsByCategory(id), _productCatalog.GetCategories());
             return View(model);
         }
 
