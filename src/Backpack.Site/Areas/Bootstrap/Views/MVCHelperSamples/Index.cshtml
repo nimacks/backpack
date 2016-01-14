@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<style type="text/css">
+    .list-group-item {
+        font-size: 1.2em;
+    }
+</style>
+
+<div class="well well-sm">
+    <h2>Bootstrap MVC Helpers</h2>
+    <p>
+        These samples illustrate how to create MVC Helpers that work with HTML 5 and Bootstrap
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="list-group">
+            <div class="list-group">
+                <h3>Custom MVC Helpers</h3>
+                @Html.ActionLink("Submit Button","Helper01", new { controller = "MVCHelperSamples" }, new {@class = "list-group-item" })
+                @Html.ActionLink("Bootstrap Check Box", "Helper02", new { controller = "MVCHelperSamples" },new { @class = "list-group-item" })
+                @Html.ActionLink("Check Box in a Button", "Helper03", new { controller = "MVCHelperSamples" },new { @class = "list-group-item" })
+                @Html.ActionLink("Bootstrap Radio Button", "Helper04", new { controller = "MVCHelperSamples" },new { @class = "list-group-item" })
+                @Html.ActionLink("Radio Button in a Button", "Helper05", new { controller = "MVCHelperSamples" },new { @class = "list-group-item" })
+                @Html.ActionLink("Bootstrap/HTML 5 Text Box", "Helper06", new { controller = "MVCHelperSamples" },new { @class = "list-group-item" })
+
+            </div>
+        </div>
+    </div>
+</div>

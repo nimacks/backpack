@@ -1,0 +1,85 @@
+﻿@using Backpack.Mvc.Helpers
+@model Backpack.Site.Areas.Bootstrap.Models.UserData
+
+@{
+  ViewBag.Title = "Check Box in a Button";
+}
+
+<style>
+  /* BEGIN: Check box in Button Styles */
+  .checkbox .btn,
+  .checkbox-inline .btn {
+    padding-left: 2em;
+    min-width: 10em;
+  }
+
+  .checkbox-inline {
+    margin-left: -1.5em;
+  }
+
+    .checkbox label,
+    .checkbox-inline label {
+      text-align: left;
+    }
+  /* END: Check box in Button Styles */
+</style>
+
+<h2>Check Box in a Button</h2>
+
+@using (Html.BeginForm())
+{
+  <div class="row">
+    <div class="col-xs-12 col-md-6 center-block">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Employee Info</h3>
+        </div>
+        <div class="panel-body">
+          <div class="form-group">
+            @Html.CheckBoxButtonFor(m => m.IsActive,
+                  "IsActive", "Is Active?")
+          </div>
+          <div class="form-group">
+            @Html.CheckBoxButtonFor(m => m.IsIn401k,
+                  "IsIn401k", "401k?", "", true, false)
+          </div>
+          <div class="form-group">
+            @Html.CheckBoxButtonFor(m => m.IsInHealthCare,
+                  "IsInHealthCare", "Health Care?")
+          </div>
+        </div>
+        <div class="panel-footer">
+          @Html.SubmitButton("Submit")
+          @Html.SubmitButton("Cancel", "cancelButton",
+                true, "btn-default")
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-6 center-block">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Employee Info (Inline)</h3>
+        </div>
+        <div class="panel-body">
+          <div class="form-group">
+            @Html.CheckBoxButtonFor(m => m.IsActive,
+                  "IsActive", "Is Active?", null,
+                  false, false, true)
+            @Html.CheckBoxButtonFor(m => m.IsIn401k,
+                  "IsIn401k", "401k?", null, true, false, true)
+            @Html.CheckBoxButtonFor(m => m.IsInHealthCare,
+                  "IsInHealthCare", "Health Care?", null,
+                  false, false, true)
+          </div>
+        </div>
+        <div class="panel-footer">
+          @Html.SubmitButton("Submit")
+          @Html.SubmitButton("Cancel", "cancelButton", true, "btn-default")
+        </div>
+      </div>
+    </div>
+  </div>
+}

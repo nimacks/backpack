@@ -1,0 +1,38 @@
+﻿@using Backpack.Mvc.Helpers
+@model Backpack.Site.Areas.Bootstrap.Models.UserData
+
+@{
+  ViewBag.Title = "Bootstrap Radio Button MVC Helper";
+}
+
+<h2>Bootstrap Radio Button MVC Helper</h2>
+
+@using (Html.BeginForm())
+{
+  <div class="row">
+    <div class="col-xs-12 col-md-6 center-block">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Is Employee Active?</h3>
+        </div>
+        <div class="panel-body">
+          <div class="form-group">
+            @Html.RadioButtonBootstrapFor(m => m.IsActive,
+                  "IsActive", "IsActive", 
+                  "Is Active?", "true")
+          </div>
+          <div class="form-group">
+            @Html.RadioButtonBootstrapFor(m => m.IsActive,
+                  "IsInactive", "IsActive", 
+                  "Is NOT Active?", "false")
+          </div>
+        </div>
+        <div class="panel-footer">
+          @Html.SubmitButton("Submit")
+          @Html.SubmitButton("Cancel", "cancelButton", 
+                true, "btn-default")
+        </div>
+      </div>
+    </div>
+  </div>
+}

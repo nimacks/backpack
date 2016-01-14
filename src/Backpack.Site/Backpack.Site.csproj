@@ -205,11 +205,14 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Bootstrap\BootstrapAreaRegistration.cs" />
+    <Compile Include="Areas\Bootstrap\Models\UserData.cs" />
+    <Compile Include="Areas\Bootstrap\Controllers\MVCHelperSamplesController.cs" />
     <Compile Include="Areas\NorthwindAdmin\NorthwindAdminAreaRegistration.cs" />
     <Compile Include="Areas\Northwind\Controllers\ShopController.cs" />
     <Compile Include="Areas\Northwind\NorthwindAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\FontAwesomeController.cs" />
+    <Compile Include="Areas\Bootstrap\Controllers\FontAwesomeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -241,6 +244,16 @@
     <Content Include="Areas\Northwind\Views\Shop\Index.cshtml" />
     <Content Include="Areas\NorthwindAdmin\Views\web.config" />
     <Content Include="Areas\Northwind\Views\Shared\_CategoryList.cshtml" />
+    <Content Include="Areas\Bootstrap\Views\web.config" />
+    <Content Include="Areas\Bootstrap\Views\MVCHelperSamples\Helper01.cshtml" />
+    <Content Include="Areas\Bootstrap\Views\MVCHelperSamples\Helper02.cshtml" />
+    <Content Include="Areas\Bootstrap\Views\MVCHelperSamples\Helper03.cshtml" />
+    <Content Include="Areas\Bootstrap\Views\MVCHelperSamples\Helper04.cshtml" />
+    <Content Include="Areas\Bootstrap\Views\MVCHelperSamples\Helper05.cshtml" />
+    <Content Include="Areas\Bootstrap\Views\MVCHelperSamples\Helper06.cshtml" />
+    <Content Include="Areas\Bootstrap\Views\MVCHelperSamples\Index.cshtml" />
+    <Content Include="Areas\Bootstrap\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Bootstrap\Views\Shared\_BootstrapLayout.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -288,7 +301,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="ConnectionString.config" />
-    <Content Include="Views\FontAwesome\Index.cshtml" />
+    <Content Include="Areas\Bootstrap\Views\FontAwesome\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -309,6 +322,10 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Backpack.Mvc\Backpack.Mvc.csproj">
+      <Project>{11add701-18b6-40cb-885d-0cfce415045c}</Project>
+      <Name>Backpack.Mvc</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Backpack.Site.Core\Backpack.Site.Core.csproj">
       <Project>{c8e124a7-8ca2-4545-8f50-4ca5bbc521ab}</Project>
       <Name>Backpack.Site.Core</Name>

@@ -1,0 +1,83 @@
+﻿@using Backpack.Mvc.Helpers
+@model Backpack.Site.Areas.Bootstrap.Models.UserData
+
+@{
+  ViewBag.Title = "Radio Button in a Button";
+}
+
+<style>
+  /* BEGIN: Radio Button in Button Styles */
+  .radio .btn,
+  .radio-inline .btn {
+    padding-left: 2em;
+    min-width: 10em;
+  }
+
+  .radio-inline {
+    margin-left: -1.5em;
+  }
+
+    .radio label,
+    .radio-inline label {
+      text-align: left;
+    }
+  /* END: Radio Button in Button Styles */
+</style>
+
+<h2>Radio Button in a Button</h2>
+
+@using (Html.BeginForm())
+{
+  <div class="row">
+    <div class="col-xs-12 col-md-6 center-block">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Is Employee Active?</h3>
+        </div>
+        <div class="panel-body">
+          <div class="form-group">
+            @Html.RadioButtonInButtonFor(m => m.IsActive,
+            "IsActive", "IsActive", "Is Active?", "true")
+          </div>
+          <div class="form-group">
+            @Html.RadioButtonInButtonFor(m => m.IsActive,
+            "IsInactive", "IsActive", "Is NOT Active?", "false")
+          </div>
+        </div>
+        <div class="panel-footer">
+          @Html.SubmitButton("Submit")
+          @Html.SubmitButton("Cancel", "cancelButton", 
+                true, "btn-default")
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-6 center-block">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Is Employee Active? (Inline)</h3>
+        </div>
+        <div class="panel-body">
+          <div class="form-group">
+            @Html.RadioButtonInButtonFor(m => m.IsActive,
+                  "IsActive", "IsActive", "Is Active?",
+                  "true", null,
+                  false, false, true)
+        
+            @Html.RadioButtonInButtonFor(m => m.IsActive,
+                  "IsInactive", "IsActive", "Is NOT Active?",
+                  "false", null,
+                  false, false, true)
+          </div>
+        </div>
+        <div class="panel-footer">
+          @Html.SubmitButton("Submit")
+          @Html.SubmitButton("Cancel", "cancelButton",
+                true, "btn-default")
+        </div>
+      </div>
+    </div>
+  </div>
+}

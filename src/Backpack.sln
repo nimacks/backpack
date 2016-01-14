@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backpack", "Backpack\Backpa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backpack.Site.Core", "Backpack.Site.Core\Backpack.Site.Core.csproj", "{C8E124A7-8CA2-4545-8F50-4CA5BBC521AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backpack.Mvc", "Backpack.Mvc\Backpack.Mvc.csproj", "{11ADD701-18B6-40CB-885D-0CFCE415045C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{C8E124A7-8CA2-4545-8F50-4CA5BBC521AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8E124A7-8CA2-4545-8F50-4CA5BBC521AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8E124A7-8CA2-4545-8F50-4CA5BBC521AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11ADD701-18B6-40CB-885D-0CFCE415045C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11ADD701-18B6-40CB-885D-0CFCE415045C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11ADD701-18B6-40CB-885D-0CFCE415045C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11ADD701-18B6-40CB-885D-0CFCE415045C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,5 +63,6 @@ Global
 		{0A29FC19-63AE-4B8D-9E4E-0C74EA93C18F} = {B882DECC-D257-4670-8AC5-3E4B054A29BC}
 		{9EFED57C-12AD-4581-AE06-994AAB82026C} = {B882DECC-D257-4670-8AC5-3E4B054A29BC}
 		{C8E124A7-8CA2-4545-8F50-4CA5BBC521AB} = {BB6402E3-629F-495A-995B-9DE94C5FF199}
+		{11ADD701-18B6-40CB-885D-0CFCE415045C} = {B882DECC-D257-4670-8AC5-3E4B054A29BC}
 	EndGlobalSection
 EndGlobal

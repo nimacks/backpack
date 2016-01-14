@@ -8,7 +8,7 @@
             @foreach (var category in Model)
             {
                 <li class="list-group-item">
-                    @Html.ActionLink(category.Name, "Category",new { id=category.Id })
+                    @Html.ActionLink(category.Name, "Category",new RouteValueDictionary(new { id = category.Id}))
                 </li>
             }
             
