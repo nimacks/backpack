@@ -1,5 +1,4 @@
-﻿
-@model Backpack.Site.Models.ProductViewModel
+﻿@model Backpack.Site.Models.ProductViewModel
 
 
 @{
@@ -10,10 +9,9 @@
 <div class="row">
     <div class="col-md-3">
         <aside>
-            @Html.Partial("_CategoryList",Model.Categories)
+            @Html.Partial("_CategoryList", Model.Categories)
         </aside>
     </div>
 
-   @Html.Partial("_ProductList",Model.Products);
+    @Html.Partial("_ProductList", Model.Products)
 </div>
- 

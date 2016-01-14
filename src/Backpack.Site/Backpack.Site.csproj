@@ -254,6 +254,8 @@
     <Content Include="Areas\Bootstrap\Views\MVCHelperSamples\Index.cshtml" />
     <Content Include="Areas\Bootstrap\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Bootstrap\Views\Shared\_BootstrapLayout.cshtml" />
+    <Content Include="Areas\Northwind\Views\Shared\_ProductList.cshtml" />
+    <None Include="Areas\Northwind\Views\Shop\Category.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

@@ -10,17 +10,17 @@ namespace Backpack.Site.Areas.Northwind.Controllers
 {
     public class ShopController : Controller
     {
-        private readonly IProductCatalogService _catalogRepository;
-        public ShopController(IProductCatalogService catalogRepository)
+        private readonly IProductCatalogService _productCatalog;
+        public ShopController(IProductCatalogService productCatalog)
         {
-            _catalogRepository = catalogRepository;
+            _productCatalog = productCatalog;
         }
 
         // GET: Northwind/Shop
         public ActionResult Index()
         {
-            var model = _catalogRepository.GetProducts().ToProductViewModel();
-            model.Categories = _catalogRepository.GetCategories().ToCategoriesViewModel();
+            var model = _productCatalog.GetProducts().ToProductViewModel();
+            model.Categories = _productCatalog.GetCategories().ToCategoriesViewModel();
 
             return View(model);
         }
@@ -28,80 +28,11 @@ namespace Backpack.Site.Areas.Northwind.Controllers
 
         public ActionResult Category(int id)
         {
-            //var model = _catalogRepository.GetProductsByCategory(id);
-            throw new NotImplementedException();
+            var model = _productCatalog.GetProductsByCategory(id).ToProductViewModel();
+            model.Categories = _productCatalog.GetCategories().ToCategoriesViewModel();
+            return View(model);
         }
 
-        // GET: Northwind/Shop/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: Northwind/Shop/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Northwind/Shop/Create
-        [HttpPost]
-        public ActionResult Create(FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Northwind/Shop/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: Northwind/Shop/Edit/5
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Northwind/Shop/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: Northwind/Shop/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        
     }
 }
