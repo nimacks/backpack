@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using Backpack.Site.Core.Products;
 using Backpack.Site.Models;
-
+using System.Web;
 
 namespace Backpack.Site.Areas.Northwind.Controllers
 {
@@ -22,6 +22,7 @@ namespace Backpack.Site.Areas.Northwind.Controllers
         [Route("northwind/shop")]
         public ActionResult Index()
         {
+          var ts=  HttpContext.Request.Browser.IsMobileDevice;
             ProductViewModel model = new ProductViewModel();
             model.Build(_productCatalog.GetProducts(), _productCatalog.GetCategories());
             return View(model);

@@ -7,5 +7,6 @@ namespace Backpack.Site.Core.Products
     {
         IEnumerable<Product> GetProducts();
         IEnumerable<Category> GetCategories();
+        IEnumerable<Product> GetProductsByCategory(int categoryId);
     }
 }

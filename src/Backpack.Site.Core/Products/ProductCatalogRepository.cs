@@ -18,6 +18,11 @@ namespace Backpack.Site.Core.Products
            return _northwindEntities.Categories.ToList();
         }
 
+        public IEnumerable<Product> GetProductsByCategory(int categoryId)
+        {
+            return _northwindEntities.Products.Where(x => x.CategoryID == categoryId);
+        }
+
         public IEnumerable<Product> GetProducts()
         {
             return _northwindEntities.Products.ToList();
