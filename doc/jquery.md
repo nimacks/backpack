@@ -178,10 +178,13 @@ evt.stopPropagation();				    // Prevents parent elements recieving bubble event
 $(document).unbind('click')	
 
 
-// ******** JQUERY Strings ********
+// ******** JQUERY Converters ********
 
 var jsonObj = $.parseJSON(returnedData);             //converts a string into a json object
 var jsonString = JSON.stringify(jsonObj);            //converts a jsonObject into a string
+
+var mapObj = {employeeName: "John Smith", department: "Technology"};
+var querystring = $.param(mapObj)                    // Used to convert an object into a querystring format
 
 // ******** Logging & Debugging ********
 
@@ -190,7 +193,18 @@ console.log(returnedData);
 
 
 // ******** JQUERY AJAX ********
-$.ajax([settings]);                                 // Performs an asynchronouse regquest                    
+$.ajax([settingsMapObject]);                                 // Performs an asynchronouse regquest  
+
+where, settingsMapObject is
+        {
+        type: "GET",
+        url: "requestUrl",
+        data: "param1=paramValue1& param2=paramValue2&...",
+        dataType: "text", // html, xml, json
+        success: successCallbackFunction,
+        error: errorCallbackFunction
+        }
+                  
 $.getJSON(url, data, successCallbackFunction);      // Load JSON-encoded data from the server using a GET HTTP request.
 load(url, data, completeCallbackFunction);          // Load data from the server and place the returned HTML into the matched element.                                    
 

@@ -17,5 +17,10 @@ namespace Backpack.Extensions
         {
             return dateTime.ToString("D");
         }
+
+        public static string ToLongDate(this DateTime dateTime)
+        {
+            return dateTime.ToString("F");
+        }
     }
 }
