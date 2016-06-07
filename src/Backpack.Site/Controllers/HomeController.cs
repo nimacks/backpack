@@ -10,6 +10,8 @@ namespace Backpack.Site.Controllers
     {
         public ActionResult Index()
         {
+            ViewData["ipaddress"] = Request.ServerVariables["REMOTE_ADDR"];
+            
             return View();
         }
 
