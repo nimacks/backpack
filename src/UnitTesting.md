@@ -31,6 +31,8 @@ public class CalculatorFixture
 ```
 
 
+### Naming Your Unit Tests
+
 >Where there are multiple code paths then it is expected that you write a test for every possible outcome of each code path.
 
 
@@ -66,3 +68,7 @@ to mock this. You can simple create a new instance of the dictionary
 
 #### Integration tests.
 
+
+http://www.developerhandbook.com/unit-testing/writing-unit-tests-with-nunit-and-moq/
+http://www.developerhandbook.com/category/unit-testing/
+https://github.com/Moq/moq4/wiki/Quickstart
