@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{88F403C5-E3B
 	ProjectSection(SolutionItems) = preProject
 		..\doc\jquery.md = ..\doc\jquery.md
 		..\doc\Linq.md = ..\doc\Linq.md
+		Moq.md = Moq.md
+		UnitTesting.md = UnitTesting.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{B882DECC-D257-4670-8AC5-3E4B054A29BC}"
