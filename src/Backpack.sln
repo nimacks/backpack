@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sites", "Sites", "{BB6402E3-629F-495A-995B-9DE94C5FF199}"
 EndProject
@@ -30,6 +30,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backpack.Mvc", "Backpack.Mvc\Backpack.Mvc.csproj", "{11ADD701-18B6-40CB-885D-0CFCE415045C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backpack.WebForms", "Backpack.WebForms\Backpack.WebForms.csproj", "{274CC7E5-F43E-4A8B-8FF6-246FAA80BC4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backpack.Api", "Backpack.Api\Backpack.Api.csproj", "{8F44F77C-8D5D-44BE-8642-F4DFB92F70F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backpack.Api.Tests", "Backpack.Api.Tests\Backpack.Api.Tests.csproj", "{34FF7E61-6E92-4F99-9168-3246A3574367}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +69,14 @@ Global
 		{274CC7E5-F43E-4A8B-8FF6-246FAA80BC4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{274CC7E5-F43E-4A8B-8FF6-246FAA80BC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{274CC7E5-F43E-4A8B-8FF6-246FAA80BC4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F44F77C-8D5D-44BE-8642-F4DFB92F70F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F44F77C-8D5D-44BE-8642-F4DFB92F70F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F44F77C-8D5D-44BE-8642-F4DFB92F70F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F44F77C-8D5D-44BE-8642-F4DFB92F70F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34FF7E61-6E92-4F99-9168-3246A3574367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34FF7E61-6E92-4F99-9168-3246A3574367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34FF7E61-6E92-4F99-9168-3246A3574367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34FF7E61-6E92-4F99-9168-3246A3574367}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,5 +89,7 @@ Global
 		{C8E124A7-8CA2-4545-8F50-4CA5BBC521AB} = {BB6402E3-629F-495A-995B-9DE94C5FF199}
 		{11ADD701-18B6-40CB-885D-0CFCE415045C} = {B882DECC-D257-4670-8AC5-3E4B054A29BC}
 		{274CC7E5-F43E-4A8B-8FF6-246FAA80BC4D} = {BB6402E3-629F-495A-995B-9DE94C5FF199}
+		{8F44F77C-8D5D-44BE-8642-F4DFB92F70F7} = {BB6402E3-629F-495A-995B-9DE94C5FF199}
+		{34FF7E61-6E92-4F99-9168-3246A3574367} = {BB6402E3-629F-495A-995B-9DE94C5FF199}
 	EndGlobalSection
 EndGlobal
