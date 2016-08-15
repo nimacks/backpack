@@ -7,6 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sites", "Sites", "{BB6402E3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{88F403C5-E3BB-45C0-ACB6-5F1428CD37A7}"
 	ProjectSection(SolutionItems) = preProject
+		Automapper.md = Automapper.md
 		..\doc\jquery.md = ..\doc\jquery.md
 		..\doc\Linq.md = ..\doc\Linq.md
 		Moq.md = Moq.md
