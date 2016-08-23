@@ -9,14 +9,18 @@ $('.cssclass');			// css class
 $('#navigationBar a'); 	// descendants
 $('#body > a'); 		// child nodes
 $('#h2 + div');			// adjacent siblings
+```
 
+```Javascript
 /* Compounds selections */
 =  //is exactly equal
 != //is not equal
 ^= //is starts with
 $= //is ends with
 *= //is contains
+```
 
+```Javascript
 id 
 name
 href
@@ -37,11 +41,12 @@ $('a:not([href^=http://])');// elements with exclusion filter
 $('li:has(a)');			    // elements with inclusion filter
 $('a:contains(Click Me!)');	// elements with inclusion text
 $('div:hidden').show();		// elements with hidden filter
+```
 
 
 // ******** JQUERY METHODS ********
 //***********************************
-
+```Javascript
 $('.foo').show().width(300);	// Inline chaining
 $('.foo').show()				// Multi line chaining
 	.width(300)				
@@ -50,7 +55,9 @@ $('.foo').show()				// Multi line chaining
 $('.foo').html();			// replaces Javascript innerHtml 
 $('.foo').html = '<br>';		// replaces Javascript innerHtml 
 $('.foo').text = '<br>';		// encodes html (to show code in html)
+```
 
+```Javascript
 
 // Adding and replacing page content
 $('.foo').append('<br>')	// adds as last child element of selected element
@@ -60,7 +67,9 @@ $('.foo').after('<br>')		// adds element aftter
 $('.foo').remove()		// removes element
 $('.foo').replace('<br>')	// replaces element
 $('#AnID tbody:last').append("<tr><td></td></tr>"); // Add html into a section
+```
 
+```Javascript
 
 
 // Setting and Reading Tag Attributes
@@ -74,6 +83,8 @@ $('.foo').css({
     'font-size' : '200%'
 });								// Set multiple CSS properties.
 
+```
+```Javascript
 // Reading, setting and removing HTML Attributes
 $('img').attr('src')			// Get attribute
 $('img').attr('src', 'foo.jpg');	// Set attribute
@@ -103,8 +114,10 @@ $("select").removeAttr("disabled");
 $("input").show();
 $("input").hide();
 
+```
 
 
+```Javascript
 
 // ******** JQUERY Loops ********
 //***********************************
@@ -119,7 +132,9 @@ var myData = { firstName: 'Bob', lastName:, 'Smith'};
 $('#foo').bind('click', myData, functionName);
 var fname = evt.data.firstName;
 $('#foo').bind('click', functionName);
+```
 
+```Javascript
 
 // ******** JQUERY Events ********
 //***********************************
