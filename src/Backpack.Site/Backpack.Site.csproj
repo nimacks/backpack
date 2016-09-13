@@ -232,6 +232,8 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -258,6 +260,14 @@
     <Content Include="Areas\Bootstrap\Views\Shared\_BootstrapLayout.cshtml" />
     <Content Include="Areas\Northwind\Views\Shared\_ProductList.cshtml" />
     <None Include="Areas\Northwind\Views\Shop\Category.cshtml" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.0.js" />
@@ -429,59 +439,6 @@
     <Content Include="Scripts\tinymce\skins\lightgray\img\trans.gif" />
     <Content Include="Scripts\tinymce\skins\lightgray\skin.ie7.min.css" />
     <Content Include="Scripts\tinymce\skins\lightgray\skin.min.css" />
-    <Content Include="Scripts\tinymce\themes\inlite\config\bolt\atomic.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\config\bolt\bootstrap-atomic.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\config\bolt\bootstrap-browser.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\config\bolt\bootstrap-demo.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\config\bolt\bootstrap-prod.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\config\bolt\browser.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\config\bolt\demo.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\config\bolt\prod.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\config\dent\depend.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\scratch\compile\bootstrap.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\scratch\compile\theme.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\scratch\inline\theme.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\scratch\inline\theme.raw.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\demo\css\demo.css" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\demo\html\demo.html" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\demo\js\tinymce\inlite\Demo.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\alien\Arr.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\alien\Bookmark.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\alien\Unlink.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\alien\Uuid.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\core\Actions.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\core\Convert.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\core\ElementMatcher.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\core\Layout.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\core\Matcher.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\core\Measure.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\core\PredicateId.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\core\SelectionMatcher.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\core\SkinLoader.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\core\UrlType.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\file\Conversions.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\file\Picker.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\Theme.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\ui\Buttons.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\ui\Forms.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\ui\Panel.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\main\js\tinymce\inlite\ui\Toolbar.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\test\js\atomic\alien\ArrTest.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\test\js\atomic\alien\UuidTest.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\test\js\atomic\core\ConvertTest.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\test\js\atomic\core\MatcherTest.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\test\js\atomic\core\UrlTypeTest.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\test\js\browser\alien\BookmarkTest.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\test\js\browser\alien\UnlinkTest.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\test\js\browser\core\ActionsTest.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\test\js\browser\core\ElementMatcher.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\test\js\browser\core\LayoutTest.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\test\js\browser\core\MeasureTest.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\test\js\browser\core\PredicateIdTest.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\test\js\browser\core\SelectionMatcherTest.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\test\js\browser\file\ConversionsTest.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\test\js\browser\file\SelectionMatcher.js" />
-    <Content Include="Scripts\tinymce\themes\inlite\src\test\js\browser\ThemeTest.js" />
     <Content Include="Scripts\tinymce\themes\inlite\theme.js" />
     <Content Include="Scripts\tinymce\themes\inlite\theme.min.js" />
     <Content Include="Scripts\tinymce\themes\modern\theme.js" />
@@ -548,9 +505,6 @@
     <Folder Include="Areas\Northwind\Models\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
@@ -565,6 +519,10 @@
     <ProjectReference Include="..\Backpack.Site.Core\Backpack.Site.Core.csproj">
       <Project>{c8e124a7-8ca2-4545-8f50-4ca5bbc521ab}</Project>
       <Name>Backpack.Site.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Backpack\Backpack.csproj">
+      <Project>{9efed57c-12ad-4581-ae06-994aab82026c}</Project>
+      <Name>Backpack</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
